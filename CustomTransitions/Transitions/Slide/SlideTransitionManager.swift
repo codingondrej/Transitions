@@ -10,7 +10,7 @@ import UIKit
 final class SlideTransitionManager: NSObject, UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return SlideTransitionAnimator(transition: .presenting)
+        return SlideTransitionAnimator()
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
